@@ -46,7 +46,10 @@ optional arguments:
                         quimica, sistemas, tecnicatura
 </pre>
 
+
 #### Notas de uso
+- Luego te va a pedir la clave de Autogestión.
+- Si corrés el script sin los flags -l o -s no pasa nada, después te los va a pedir igual. Vos tranqui.
 - La URL de la materia está hardcodeada, ver método driver.get() que se encuentra en el bucle while True y cambiarla según sea necesario.
 - Los servicios pueden ser cualquiera de los que están en Autogestión, no sólo los que aparecen ahí.
 
@@ -62,5 +65,5 @@ A esta aplicación le vendrían bien muchos cambios para que sea más útil.
 [UTN FRC]: <https://www.frc.utn.edu.ar/>
 [chromedriver]: <https://sites.google.com/a/chromium.org/chromedriver/downloads>
 [alarma]: <http://soundbible.com/grab.php?id=1746&type=wav>
-[Juli De Angelis]: <www.example.com>
+[Juli De Angelis]: <https://github.com/julideangelis>
 [Juani Filardo]: <https://github.com/JuaniFilardo>
