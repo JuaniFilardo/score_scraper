@@ -22,14 +22,17 @@ Las distintas versiones se pueden encontrar acá: https://sites.google.com/a/chr
 Atajo para Linux (última versión al día 20/11/2018):
 ```
 $ wget https://chromedriver.storage.googleapis.com/2.44/chromedriver_linux64.zip
+$ unzip chromedriver_linux64.zip
 ```
 Otros drivers en: https://www.seleniumhq.org/download/
+
+Es importante que el nombre del archivo sea chromedriver si estás en Linux, y chromedriver.exe si estás en Windows.
 
 
 #### Sonido de notificación
 Actualmente funcionando sólo para Linux. Puede ponerse cualquier sonido, pero dejo este a mano:
 ```
-curl http://soundbible.com/grab.php?id=1746&type=wav > sound.wav
+$ curl http://soundbible.com/grab.php?id=1746&type=wav > sound.wav
 ```
 
 ### Cómo usarlo
@@ -60,6 +63,11 @@ optional arguments:
 A esta aplicación le vendrían bien muchos cambios para que sea más útil.
 ¡Cualquier pull request será bienvenida!
 
+
+-----------------------------------------------------------------------
+*"Every good work of software starts by scratching a developer’s
+personal itch". [ESR]*
+
 [//]:# (Links. This won't be seen after it's interpreted.)
 [selenium]: <https://www.seleniumhq.org/>
 [UTN FRC]: <https://www.frc.utn.edu.ar/>
@@ -67,3 +75,4 @@ A esta aplicación le vendrían bien muchos cambios para que sea más útil.
 [alarma]: <http://soundbible.com/grab.php?id=1746&type=wav>
 [Juli De Angelis]: <https://github.com/julideangelis>
 [Juani Filardo]: <https://github.com/JuaniFilardo>
+[ESR]:<http://www.unterstein.net/su/docs/CathBaz.pdf>
