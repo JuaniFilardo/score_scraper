@@ -56,6 +56,9 @@ optional arguments:
 - La URL de la materia está hardcodeada, ver método driver.get() que se encuentra en el bucle while True y cambiarla según sea necesario.
 - Los servicios pueden ser cualquiera de los que están en Autogestión, no sólo los que aparecen ahí.
 
+#### Introduction to Web Scraping using Selenium 
+- https://medium.com/the-andela-way/introduction-to-web-scraping-using-selenium-7ec377a8cf72
+
 ### Colaboradores
 - [Juli De Angelis]
 - [Juani Filardo]
