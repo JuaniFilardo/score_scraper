@@ -56,8 +56,25 @@ optional arguments:
 - La URL de la materia está hardcodeada, ver método driver.get() que se encuentra en el bucle while True y cambiarla según sea necesario.
 - Los servicios pueden ser cualquiera de los que están en Autogestión, no sólo los que aparecen ahí.
 
+
 #### Introduction to Web Scraping using Selenium 
 - https://medium.com/the-andela-way/introduction-to-web-scraping-using-selenium-7ec377a8cf72
+
+#### Posibles errores 
+Utilizando el comando:
+
+```
+$ python ScoreScraper.py
+```
+
+Puede que te ocurra lo siguiente:
+SyntaxError: Non-ASCII character '\xc3' in file
+Tranqui, que es facil de solucionarlo.
+Solo agrega la siguiente linea, en la primer o segunda fila.
+  #coding=utf-8
+  Porque ocurre esto?
+  Python se establecerá de forma predeterminada en ASCII como codificación estándar (si no se proporcionan otras sugerencias de codificación). Para definir una codificación de código fuente, se debe colocar el comentario mágico mencionado anteriormente en los archivos de origen como primera o segunda línea del archivo.
+  
 
 ### Colaboradores
 - [Juli De Angelis]
