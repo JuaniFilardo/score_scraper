@@ -2,7 +2,8 @@
 
 Este script permite obtener las notas directamente de Autogestión 3 de la [UTN FRC] utilizando [selenium].
 
-Por el momento tiene algunas cosas que sólo van a correr en Linux, pero puede correr en Windows. La URL de la materia a chequear está hardcodeada (por ahora), pero puede ser cambiada a gusto.
+Por el momento tiene algunas cosas que sólo van a correr en Linux, pero puede correr en Windows.
+Pienso agregarle una opción para enviar un mail en el caso de que haya una materia nueva.
 
 **Aviso**: usar responsablemente. Muchas peticiones a Autogestión y el sistema se va a caer, dejando a todos sin notas. Es una buena idea esperar un tiempo entre peticiones; no tiene sentido hacerlas cada menos de 5 minutos.
 
@@ -57,10 +58,10 @@ optional arguments:
 - Los servicios pueden ser cualquiera de los que están en Autogestión, no sólo los que aparecen ahí.
 
 
-#### Introduction to Web Scraping using Selenium 
+#### Introduction to Web Scraping using Selenium
 - https://medium.com/the-andela-way/introduction-to-web-scraping-using-selenium-7ec377a8cf72
 
-#### Posibles errores 
+#### Posibles errores
 Utilizando el comando:
 
 ```
@@ -68,16 +69,21 @@ $ python ScoreScraper.py
 ```
 
 Puede que te ocurra lo siguiente:
+```
 SyntaxError: Non-ASCII character '\xc3' in file
+```
 Tranqui, que es facil de solucionarlo.
 Solo agrega la siguiente linea, en la primer o segunda fila.
+```
   #coding=utf-8
-  Porque ocurre esto?
-  Python se establecerá de forma predeterminada en ASCII como codificación estándar (si no se proporcionan otras sugerencias de codificación). Para definir una codificación de código fuente, se debe colocar el comentario mágico mencionado anteriormente en los archivos de origen como primera o segunda línea del archivo.
-  
+```
+ Por qué ocurre esto?
+ > Python se establecerá de forma predeterminada en ASCII como codificación estándar (si no se proporcionan otras sugerencias de codificación). Para definir una codificación de código fuente, se debe colocar el comentario mágico mencionado anteriormente en los archivos de origen como primera o segunda línea del archivo.
+
 
 ### Colaboradores
 - [Juli De Angelis]
+- [Lupo Terziotti]
 - [Juani Filardo]
 
 A esta aplicación le vendrían bien muchos cambios para que sea más útil.
@@ -94,5 +100,6 @@ personal itch". [ESR]*
 [chromedriver]: <https://sites.google.com/a/chromium.org/chromedriver/downloads>
 [alarma]: <http://soundbible.com/grab.php?id=1746&type=wav>
 [Juli De Angelis]: <https://github.com/julideangelis>
+[Lupo Terziotti]: <https://github.com/LupoTerziotti>
 [Juani Filardo]: <https://github.com/JuaniFilardo>
 [ESR]:<http://www.unterstein.net/su/docs/CathBaz.pdf>
